@@ -1,0 +1,506 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/Vazir.ttf");
+}
+
+/* Font Styles */
+.lalezar {
+  font-family: "lalezar";
+}
+
+body {
+  font-family: "vazir", sans-serif;
+  font-size: 1rem;
+}
+
+p {
+  text-align: justify;
+  line-height: 2rem;
+}
+
+/* Navbar */
+@media screen and (min-width: 768px) {
+  .position-md-fixed {
+    position: fixed;
+  }
+}
+
+/* Course List */
+.course-list {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  padding: 10px 0;
+}
+
+.course-list-item {
+  display: flex;
+  padding: 10px 15px;
+}
+
+.course-list-item:hover {
+  background: rgb(240, 240, 240);
+}
+
+/* Header Background */
+.header {
+  background: url("../images/wave (4).svg") top center no-repeat;
+  background-size: cover;
+}
+
+/* Counter */
+.counter-box {
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  background-color: #ffffff5e;
+}
+
+/* Service Boxes */
+.service-box {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-bottom: 4px solid;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.service-box .read-more {
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.service-box.border-primary:hover {
+  background: #0d6efd;
+}
+
+.service-box.border-success:hover {
+  background: #198754;
+}
+
+.service-box.border-warning:hover {
+  background: #ffc107;
+}
+
+.service-box:hover {
+  color: white;
+}
+
+.service-box:hover .read-more {
+  color: white !important;
+}
+
+/* Pricing Boxes */
+.pricing-box {
+  transition: all 0.5s;
+}
+
+.pricing-box:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #f2f5fc;
+}
+
+/* Avatar Image */
+.avatar-image {
+  border-radius: 5px 20px 5px;
+  width: 35%;
+  height: 35%;
+}
+
+/* Centered Container */
+.center-container {
+  text-align: center;
+}
+
+/* Modal Styles */
+.modalmy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.modal-contentmy {
+  background: #ffffff;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  padding: 20px;
+  text-align: justify;
+  max-width: 500px;
+  width: 90%;
+}
+
+.modal-contentmy h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.modal-contentmy label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-contentmy input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.modal-contentmy button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-contentmy button:hover {
+  background: #0056b3;
+}
+
+/* My Box Styles */
+.mybox {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: fit-content;
+  font-size: 1.8rem;
+}
+.center-text {
+  text-align: center;
+}
+
+/* clock style */
+
+.body-clock {
+  height: 280px;
+  width: 280px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00d9ff;
+  border-radius: 50%;
+}
+.clock {
+  width: 280px;
+  height: 280px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/clock.png");
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.clock::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #747474;
+  border-radius: 50%;
+  z-index: 4;
+}
+.clock .sec {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  transform: rotateZ(20deg);
+}
+.sec::before {
+  content: "";
+  position: absolute;
+  width: 0.5px;
+  height: 150px;
+  background: #ff0000;
+  z-index: 3;
+  border-radius: 6px 6px 0 0;
+}
+.clock .min {
+  width: 230px;
+  height: 210px;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  transform: rotateZ(70deg);
+}
+.min::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 135px;
+  background: #2f3b2e;
+  z-index: 2;
+  border-radius: 6px 6px 0 0;
+}
+.clock .hour {
+  width: 230px;
+  height: 180px;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  transform: rotateZ(30deg);
+}
+.hour::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 110px;
+  background: #000000;
+  z-index: 1;
+  border-radius: 6px 6px 0 0;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: #431bf8;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 40px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+  text-align: start;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  /* background: transparent; */
+}
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 4px;
+}
+
+.login-box a:hover {
+  background: #03e9f4;
+  color: #000000;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+/* backgraund */
+.night-sky {
+  background-color: #5ec1ffd1;
+  background-image: radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+.night-sky1 {
+  background-color: #000000d1;
+  background-image: radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+.night-sky2 {
+  background-color: #007eff;
+  background-image: radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+/* box shadow in nav */
+.box-show :hover {
+  background: #03e9f4;
+  color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.75s;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
