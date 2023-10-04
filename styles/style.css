@@ -282,6 +282,8 @@ footer {
   border-radius: 6px 6px 0 0;
 }
 
+/* login style */
+
 .login-box {
   position: absolute;
   top: 50%;
@@ -294,7 +296,21 @@ footer {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 40px;
 }
-
+@media (max-width: 576px) {
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 395px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #431bf8;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 40px;
+  }
+}
 .login-box h2 {
   margin: 0 0 30px;
   padding: 0;
