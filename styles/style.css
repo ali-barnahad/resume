@@ -537,9 +537,10 @@ footer {
 
 /* footer */
 .footer {
-  background-color: #333;
   color: #fff;
-  padding: 20px 0;
+  font-size: 80%;
+  padding: 0.3rem 0;
   text-align-last: center;
+  border-radius: 20% 20% 0 0;
 }
 
